@@ -10,6 +10,6 @@ before_build:
   - cd Build
   - cmake .. -G "Visual Studio 14"
 build_script:
-  - msbuild StateMachine.sln /nologo /verbosity:minimal
+  - msbuild MemoryPool.sln /nologo /verbosity:minimal
 test_script:
   - msbuild RUN_TESTS.vcxproj /nologo /verbosity:minimal
