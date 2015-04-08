@@ -27,7 +27,7 @@ struct Test2 : public Test1
 #include <chrono>
 #include <iostream>
 
-int main(char **ac, int av)
+int main(int argc, char *argv[])
 {
 	using Clock = std::chrono::high_resolution_clock;
 	using Duration = std::chrono::duration<float>;

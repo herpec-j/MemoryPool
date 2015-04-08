@@ -14,7 +14,11 @@ namespace BlindingTechnologies
 				{
 				public:
 					// Constructors
-					SpinLock(void) = default;
+					inline SpinLock(void)
+						: atomicLock(false)
+					{
+						return;
+					}
 
 					SpinLock(SpinLock const &) = default;
 
@@ -56,7 +60,7 @@ namespace BlindingTechnologies
 
 				private:
 					// Attributes
-					std::atomic_bool atomicLock = false;
+					std::atomic_bool atomicLock;
 				};
 			}
 		}
