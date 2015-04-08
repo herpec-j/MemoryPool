@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	using Duration = std::chrono::duration<float>;
 	{
 		Clock::time_point startTime = Clock::now();
-		BlindingTechnologies::BlindingEngine::ObjectPool<Test2> pool;
+		AO::MemoryPool::ObjectPool<Test2> pool;
 		std::list<Test2 *> results;
 		for (int i = 0; i < 3000000; ++i)
 		{
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 	}
 	{
 		Clock::time_point startTime = Clock::now();
-		BlindingTechnologies::BlindingEngine::ObjectPool<Test2> pool;
+		AO::MemoryPool::ObjectPool<Test2> pool;
 		std::list<Test2 *> results;
 		for (int i = 0; i < 3000000; ++i)
 		{

@@ -4,9 +4,9 @@
 #include <forward_list>
 #include <cassert>
 
-namespace BlindingTechnologies
+namespace AO
 {
-	namespace BlindingEngine
+	namespace MemoryPool
 	{
 		inline namespace Version_1
 		{

@@ -7,9 +7,9 @@
 #include "MemoryPool/BufferPool.hpp"
 #include "MemoryPool/Private/SpinLock.hpp"
 
-namespace BlindingTechnologies
+namespace AO
 {
-	namespace BlindingEngine
+	namespace MemoryPool
 	{
 		inline namespace Version_1
 		{
