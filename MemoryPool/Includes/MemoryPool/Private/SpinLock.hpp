@@ -38,17 +38,7 @@ namespace BlindingTechnologies
 						while (atomicLock.exchange(true));
 					}
 
-					inline void lock(void) volatile
-					{
-						while (atomicLock.exchange(true));
-					}
-
 					inline void unlock(void)
-					{
-						atomicLock = false;
-					}
-
-					inline void unlock(void) volatile
 					{
 						atomicLock = false;
 					}
